@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1DB954;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1DB954;
+}
+
+/* Estilos específicos para el dashboard */
+main {
+    display: flex;
+    height: calc(100vh - 86px); /* 100% de la altura menos la altura del encabezado y la barra de navegación */
+}
+
+.sidebar {
+    width: 250px; /* Ancho ajustado de la barra lateral */
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex; /* Para centrar los elementos verticalmente */
+    flex-direction: column; /* Apilamiento de elementos verticalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente la imagen y el texto */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 10px; /* Reducir el espacio superior de la imagen */
+}
+
+.profile img {
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px;
+}
+
+.students ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centra los elementos de la lista */
+}
+
+.students ul li {
+    margin-bottom: 5px;
+}
+
+.course {
+    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.table-container {
+    max-height: 400px; /* Altura máxima de la tabla */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
